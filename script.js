@@ -12,10 +12,10 @@ function createListElement() {
 	li.appendChild(document.createTextNode(input.value));
 	var btn = document.createElement("button");
 	btn.innerText = "Delete";
+	btn.addEventListener("click", removeLi);
 	li.appendChild(btn);
 	ul.appendChild(li);
 	input.value = "";
-	this.addEventListener("click", removeLi);
 }
 
 function addListAfterClick() {
