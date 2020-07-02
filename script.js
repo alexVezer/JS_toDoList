@@ -11,7 +11,7 @@ function createListElement() {
 	var li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value));
 	var btn = document.createElement("button");
-	btn.innerText = "Delete";
+	btn.innerText = "X";
 	btn.addEventListener("click", removeLi);
 	li.appendChild(btn);
 	ul.appendChild(li);
